@@ -11,6 +11,8 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>dagger2-shaded-library</module>
+        <module>dagger2-shaded-compiler</module>
         <module>dagger2-android-processor-shaded</module>
     </modules>
 

@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-    api "com.github.blinkist.dagger2-shaded:dagger2-shaded-library:$dagger_version"
+    api "com.arturogutierrez.dagger2:dagger2-shaded-library:$dagger_version"
     api "androidx.annotation:annotation:$androidx_version"
     api 'javax.inject:javax.inject:1'
     implementation "com.google.errorprone:error_prone_annotations:2.3.4"

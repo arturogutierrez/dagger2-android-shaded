@@ -28,7 +28,7 @@ android {
 
 dependencies {
     api(project(':dagger2-android-shaded'))
-    api "com.github.blinkist.dagger2-shaded:dagger2-shaded-library:$dagger_version"
+    api "com.arturogutierrez.dagger2:dagger2-shaded-library:$dagger_version"
     api "androidx.annotation:annotation:$androidx_version"
     api "androidx.appcompat:appcompat:$androidx_version"
     api "androidx.fragment:fragment:$androidx_version"
