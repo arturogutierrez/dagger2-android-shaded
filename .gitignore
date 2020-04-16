@@ -13,3 +13,10 @@
 /captures
 .externalNativeBuild
 .cxx
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
