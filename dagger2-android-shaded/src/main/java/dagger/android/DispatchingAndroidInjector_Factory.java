@@ -8,7 +8,7 @@ import javax.inject.Provider2;
 import dagger2.internal.Factory;
 
 @Generated(
-        value = "dagger.internal.codegen.ComponentProcessor",
+        value = "dagger2.internal.codegen.ComponentProcessor",
         comments = "https://dagger.dev"
 )
 @SuppressWarnings({
