@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply from: '../buildscripts/publishing.gradle'
+
+version=dagger_version
 
 android {
     compileSdkVersion 29

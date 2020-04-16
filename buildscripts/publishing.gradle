@@ -1,0 +1,30 @@
+apply plugin: 'digital.wup.android-maven-publish'
+
+afterEvaluate {
+    task javaSourcesJar(type: Jar) {
+        classifier 'sources'
+        if (plugins.hasPlugin('com.android.library')) {
+            from android.sourceSets.main.java.srcDirs
+        } else {
+            from sourceSets.main.allSource
+        }
+    }
+
+    publishing {
+        publications {
+            "$project.name"(MavenPublication) {
+                groupId project.group
+                artifactId project.name
+                version project.version
+
+                if (plugins.hasPlugin('com.android.library')) {
+                    from components.android
+                } else {
+                    from components.java
+                }
+
+                artifact javaSourcesJar
+            }
+        }
+    }
+}
