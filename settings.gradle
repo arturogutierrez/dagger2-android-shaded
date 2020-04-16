@@ -1,2 +1,2 @@
-include ':dagger2-android-shaded'
+include ':dagger2-android-shaded-library'
 include ':dagger2-android-support-shaded'

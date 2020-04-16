@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    api(project(':dagger2-android-shaded'))
+    api(project(':dagger2-android-shaded-library'))
     api "com.arturogutierrez.dagger2:dagger2-shaded-library:$dagger_version"
     api "androidx.annotation:annotation:$androidx_version"
     api "androidx.appcompat:appcompat:$androidx_version"
