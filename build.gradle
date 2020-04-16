@@ -2,6 +2,7 @@
 
 buildscript {
     ext.dagger_version = '2.27'
+    ext.androidx_version = '1.1.0'
     repositories {
         google()
         jcenter()

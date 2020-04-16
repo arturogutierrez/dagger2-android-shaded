@@ -24,9 +24,13 @@ android {
 }
 
 dependencies {
-    implementation(project(':dagger2-android-shaded'))
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    api(project(':dagger2-android-shaded'))
+    api "com.github.blinkist.dagger2-shaded:dagger2-shaded-library:$dagger_version"
+    api "androidx.annotation:annotation:$androidx_version"
+    api "androidx.appcompat:appcompat:$androidx_version"
+    api "androidx.fragment:fragment:$androidx_version"
+    api 'javax.inject:javax.inject:1'
+
     implementation "com.google.errorprone:error_prone_annotations:2.3.4"
     implementation "javax.annotation:javax.annotation-api:1.3.2"
-    implementation "com.github.blinkist.dagger2-shaded:dagger2-shaded-library:$dagger_version"
 }
